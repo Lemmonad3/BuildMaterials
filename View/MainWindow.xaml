@@ -1,0 +1,47 @@
+﻿<Window x:Class="BuildingMaterials.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuildingMaterials"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Title="Авторизация" Height="300" Width="250" Icon="/Icon/icon.ico">
+    <Grid>
+       
+              
+        <Grid Background="White" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Margin="15" VerticalAlignment = "Center">
+                <Label HorizontalContentAlignment="Center"
+               FontSize="15"
+               FontStyle="Italic"  Foreground="Black">
+                    Авторизация
+                </Label>
+                <TextBlock Text="Введите логин:"
+                           
+                           FontStyle="Italic" />
+                <TextBox x:Name="tbLogin" />
+                <TextBlock Text="Введите пароль:"
+                           FontStyle="Italic" />
+                <PasswordBox x:Name="tbPassword"  />
+            </StackPanel>
+            <Button x:Name="btnSingin"
+                    FontStyle="Italic" 
+            Grid.Row="1"
+                Content="Войти"
+                Background="GreenYellow"
+                Click="btnSingin_Click"
+                Cursor="Hand"
+                HorizontalAlignment="Left" Margin="15" Width="84"
+                />
+
+        </Grid>
+    </Grid>
+</Window>
