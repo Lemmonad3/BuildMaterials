@@ -25,16 +25,15 @@
                     Авторизация
                 </Label>
                 <TextBlock Text="Введите логин:"
-                           
-                           FontStyle="Italic" />
-                <TextBox x:Name="tbLogin" />
+                 FontStyle="Italic" />
+                <TextBox x:Name="tbLogin"/>
                 <TextBlock Text="Введите пароль:"
                            FontStyle="Italic" />
-                <PasswordBox x:Name="tbPassword"  />
+                <PasswordBox x:Name="tbPassword" />
             </StackPanel>
             <Button x:Name="btnSingin"
                     FontStyle="Italic" 
-            Grid.Row="1"
+                   Grid.Row="1"
                 Content="Войти"
                 Background="GreenYellow"
                 Click="btnSingin_Click"

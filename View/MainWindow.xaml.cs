@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BuildingMaterials.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,7 @@ namespace BuildingMaterials
         {
             InitializeComponent();
             AppDataBase.db = new Database.Trade1Entities();
+            DataContext = new AutoCheck();
         }
 
         private void btnSingin_Click(object sender, RoutedEventArgs e)
@@ -34,14 +36,10 @@ namespace BuildingMaterials
                 if (user == null)
                 {
                     MessageBox.Show("Неверный Логин или пароль");
-
                 }
                 else
                 {
-
-                    MessageBox.Show("Вы вошли в систему");
-
-
+                    new AppWindow().Show(); Close();
                 }
             }
             catch (Exception EX)

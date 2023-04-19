@@ -21,3 +21,5 @@ D:\projects\Visual Studio\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.C
 D:\projects\Visual Studio\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.CopyComplete
 D:\projects\Visual Studio\BuildingMaterials\obj\Debug\BuildingMaterials.exe
 D:\projects\Visual Studio\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
+D:\projects\Visual Studio\BuildingMaterials\obj\Debug\View\AppWindow.g.cs
+D:\projects\Visual Studio\BuildingMaterials\obj\Debug\View\AppWindow.baml

@@ -64,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\AppWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,9 +76,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AppDataBase.cs" />
-    <Compile Include="AutoCheck.cs" />
-    <Compile Include="BaseVM.cs" />
+    <Compile Include="View\AppWindow.xaml.cs">
+      <DependentUpon>AppWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vm\AppDataBase.cs" />
+    <Compile Include="Vm\AppVM.cs" />
+    <Compile Include="Vm\AutoCheck.cs" />
+    <Compile Include="Vm\BaseVM.cs" />
     <Compile Include="Database\BuildMaterials.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
